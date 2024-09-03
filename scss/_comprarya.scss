@@ -42,3 +42,57 @@
         }
     }    
 }
+
+.formulario {
+    background-color: $compraryacolor;
+    border: 2px solid $colorrojo;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 8px;
+
+    .subtitulohistoria3 {
+        font-family: $estiloletra !important;
+        color: $colorrojo;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-family: $estiloletra;
+        color: $colorrojo;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        input{
+            border: 2px solid $colorrojo;
+            border-radius: 4px;
+            padding: 10px;
+            font-family: $estiloletra;
+            font-size: 1rem;
+            color: $colorrojo;
+            background-color: $colorblanco;
+        }
+        textarea{
+            border: 2px solid $colorrojo;
+            border-radius: 4px;
+            padding: 10px;
+            font-family: $estiloletra;
+            font-size: 1rem;
+            color: $colorrojo;
+            background-color: $colorblanco;
+        }
+        .enviar{
+            background-color: $colorrojo;
+            color: $colorblanco;
+        }
+
+    }
+}
