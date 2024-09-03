@@ -1,0 +1,15 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $colorfondo !important;
+    p {
+        font-family: sans-serif !important;
+        font-size: 1.2rem !important;
+        line-height: 1.5 !important;
+        padding: 20px !important;
+    }
+}

@@ -1,0 +1,120 @@
+.header {
+  height: 160px;
+  background-color: $colorrojo;
+  z-index: 1000;
+  .navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    .titulo {
+        text-align: left;
+        font-family: $estiloletra;
+        font-weight: 900;
+        font-size: 45px;
+        letter-spacing: 3px;
+        text-shadow: 2px 2px 10px $colornegro;
+        color: $colorblanco;
+        padding-left: 25px;
+    }
+    .label_hamburguesa {
+      display: none;
+
+      .list_icon {
+        color: $colorblanco;
+        cursor: pointer;
+      }
+    }
+
+    .menu_hamburguesa {
+      display: none;
+
+      &:checked + .ul_links {
+        height: calc(100vh - 160px);
+      }
+    }
+    ol, ul {
+        list-style: none;
+    }
+    .ul_links {
+      width: 100%;
+      background-color: $colorrojo;
+      position: absolute;
+      top: 160px;
+      left: 0;
+      height: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      transition: height .3s;
+      z-index: 1100;
+
+      .li_links {
+        a {
+            text-decoration: none;
+        }
+        .link {
+          font-size: 20px;
+          color: $colorblanco;
+          font-weight: bold;
+          font-family: $estiloletra;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    .navbar {
+      .label_hamburguesa {
+        display: block;
+      }
+
+      .menu_hamburguesa {
+        display: block; 
+      }
+
+      .ul_links {
+        display: none; 
+      }
+
+      .menu_hamburguesa:checked ~ .ul_links {
+        display: flex; 
+        height: calc(100vh - 160px); 
+        overflow-y: auto; 
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    .navbar {
+      .label_hamburguesa {
+        display: none; 
+      }
+
+      .ul_links {
+        position: static; 
+        width: auto;
+        height: auto;
+        flex-direction: row; 
+        gap: 2rem;
+
+        .link {
+          font-size: 1.2rem;
+          transition: all 0.3s;
+          padding: 0.2rem 0.7rem;
+
+        }
+      }
+    }
+  }
+}
+

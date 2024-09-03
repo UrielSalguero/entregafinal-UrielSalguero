@@ -1,0 +1,520 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "godofwar";
+    src: url("../font/GODOFWAR.TTF");
+}
+
+header { 
+    background-color: darkred;
+    padding-bottom: 20px;
+}
+
+nav {
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+}
+
+nav h1 {
+    display: inline-block;
+    vertical-align: middle;
+    color: whitesmoke;
+    font-family: "godofwar";
+    font-size: 45px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 10px black;
+    margin: 0;
+}
+
+nav ul {
+    display: inline-block;
+    vertical-align: middle;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 270px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: "godofwar";
+}
+body { 
+    background-color: rgba(224, 215, 86, 0.466) !important; 
+}
+
+.subtitulo{
+    padding: 20px;
+    text-align: center;
+    font-family: "godofwar";
+    color: darkred;
+    text-shadow: 1px 2px 20px black; 
+    font-size: 5rem;
+}
+
+p {
+    font-family: sans-serif !important;
+    font-size: 1.2rem !important;
+    line-height: 1.5 !important;
+    padding: 20px !important;
+}
+
+.parrafointro{
+    font-family: sans-serif !important;
+    font-size: 1.8rem !important;
+    line-height: 1.5 !important;
+    padding: 20px !important;
+    text-align: justify !important;
+    text-shadow: 2px 2px 20px black !important;
+}
+
+.contenedorgeneral {
+    padding: 20px;
+}
+
+.colorsub4 {
+    background-color: darkred;
+}
+
+.subtitulo4 {
+    text-align: center !important;
+    font-family: "godofwar" !important;
+    color: whitesmoke !important;
+    text-shadow: 2px 2px 20px black !important;
+    font-size: 2rem !important;
+    padding: 20px;
+}
+
+.subtitulocontenedor {
+    text-align: center !important;
+    font-family: "godofwar" !important;
+    float: center !important;
+    width: 100% !important;
+    margin: 20px 0 !important;
+    text-shadow: 1px 1px 1px black !important;
+    font-size: 2rem !important;
+    color: darkred !important;
+}
+
+
+footer {
+    background-color: darkred;
+    padding: 2rem;
+    text-align: right;
+    margin-top: auto;
+}
+
+.titulo { 
+    text-align: left;
+    font-family: "godofwar";
+    font-weight: 900;
+    font-size: 45px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 10px black;
+    color: whitesmoke;
+    padding-left: 25px;
+}
+
+
+/*HISTORIA*/
+
+.fondohistoria {
+    min-height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.imagendehistoria {
+    content: " ";
+    background-image: url(../img/imagenhistoria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    opacity: 0.80;
+}
+
+.subtitulohistoria {
+    font-size: 4rem;
+    font-family: "godofwar";
+    text-align: center;
+    position: relative;
+    color: darkred;
+    text-shadow: 1px 1px 15px black;
+}
+
+.parrafohistoria {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    padding: 20px;
+    text-align: justify;
+    text-shadow: 2px 2px 15px black;
+}
+
+.subtitulohistoria2 {
+    font-family: "godofwar";
+    background-color: darkred;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: 20px;
+    text-align: center;
+}
+
+.contenedorcapitulos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.capitulo {
+    background-color: rgba(37, 37, 37, 0.274);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.capitulo p {
+    color: darkred;
+}
+
+.subtitulocapitulo {
+    padding: 10px;
+    text-align: center;
+    font-family: "godofwar";
+    color: darkred;
+}
+
+
+/* PERSONAJES */
+
+.contenedorP {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px;
+    
+}
+
+.contenedor-personajes1 {
+    flex: 1 1 360px; 
+    max-width: 360px;
+    height: 480px;
+    background: rgb(0, 0, 0);
+    position: relative; 
+    box-shadow: 1px 7px 10px rgba(0,0,0,0.5); 
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out; 
+}
+
+.contenedor-personajes1:hover {
+    transform: translateY(-10px);
+}
+
+.contenedor-personajes1 img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease-in-out; 
+}
+
+.contenedor-personajes1::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 1; 
+    transition: opacity 0.5s ease-in-out; 
+}
+
+.contenedor-personajes1:hover::before {
+    opacity: 0; 
+}
+
+.descripcionpersonaje {
+    font-family: "godofwar";
+    position: absolute; 
+    bottom: 0; 
+    width: 100%; 
+    background: rgba(0, 0, 0, 0.5); 
+    color: whitesmoke; 
+    padding: 10px;
+    box-sizing: border-box; 
+    transform: translateY(100%); 
+    transition: transform 0.5s ease-in-out; 
+}
+
+.contenedor-personajes1:hover .descripcionpersonaje {
+    transform: translateY(0);
+}
+
+.descripcionpersonaje h5 {
+    margin: 0;
+}
+
+
+.descripcionpersonaje p {
+    letter-spacing: 1px;
+    font-size: 14px; 
+    margin: 8px 0 0; 
+}
+
+
+/* GALERIA */
+
+#contenidogaleria {
+    width: 100%;
+    margin: auto;
+}
+
+#contenidogaleria img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+#contenidogaleria img:hover {
+    border: 5px solid darkred;
+    transform: scale(1.05); 
+}
+
+#contenidogaleria .col-lg-4 {
+    padding: 10px;
+    margin: 0 !important;
+}
+
+.titulogaleria {
+    font-family: "godofwar";
+    color: darkred;
+    text-shadow: 1px 2px 20px black; 
+    font-size: 5rem;
+}
+
+.titulogaleria2 {
+    padding: 40px;
+    text-align: center;
+    font-family: "godofwar";
+    color: darkred;
+    text-shadow: 1px 2px 20px black; 
+    font-size: 5rem;
+}
+
+
+/* COMPRAR YA*/
+
+.subtitulo {
+    margin-bottom: 20px;
+}
+
+.comprarya {
+    padding: 5px;
+    border: 2px solid darkred;
+    background-color: rgba(37, 37, 37, 0.274);
+}
+
+.contenidocomprar {
+    padding-top: 20px;
+}
+
+.btn-danger {
+    margin-top: 5px;
+}
+
+.parrafocomprar {
+    color: darkred;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    padding: 20px;
+    text-align: justify;
+    text-shadow: 1px 1px 1px darkred;
+    font-family: "godofwar" !important;
+}
+
+.listacomprar {
+    color: darkred;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 20px;
+    text-align: justify;
+    text-shadow: 1px 1px 1px rgb(224, 67, 67);
+    font-family: "godofwar" !important;
+}
+
+
+/*Media querys*/
+
+@media screen and (max-width: 1360px) {
+ 
+    nav ul li {
+        display: inline; 
+        margin-right: auto;
+        padding-left: 3.5px;
+    }
+
+    .subtitulo {
+        font-size: 4rem; 
+    }
+
+    .parrafointro {
+        font-size: 1.6rem; 
+    }
+
+    .subtitulo4 {
+        font-size: 1.75rem; 
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    nav {
+        padding: 20px;
+        flex-direction: column; 
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-end; 
+        margin-top: 10px; 
+    }
+    
+    nav ul li {
+        margin: 10px 0; 
+    }
+
+    .subtitulo {
+        font-size: 4rem; 
+    }
+
+    .parrafointro {
+        font-size: 1.6rem; 
+    }
+
+    .subtitulo4 {
+        font-size: 1.75rem; 
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    nav {
+        padding: 20px;
+        flex-direction: column; 
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-end; 
+        margin-top: 10px; 
+    }
+    
+    nav ul li {
+        margin: 10px 0; 
+    }
+
+    .subtitulo {
+        font-size: 4rem; 
+    }
+
+    .parrafointro {
+        font-size: 1.6rem; 
+    }
+
+    .subtitulo4 {
+        font-size: 1.75rem; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        padding-left: 100px;
+        text-align: right; 
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0; 
+    }
+
+    .subtitulo {
+        font-size: 3rem;
+    }
+
+    .parrafointro {
+        font-size: 1.5rem;
+    }
+
+    .subtitulo4 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        padding-left: 300px;
+        text-align: right; 
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0; 
+    }
+    nav h1 {
+        font-size: 30px;
+    }
+
+    .subtitulo {
+        font-size: 2rem;
+    }
+
+    .parrafointro {
+        font-size: 1.2rem;
+    }
+
+    .subtitulo4 {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        display: block;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+}

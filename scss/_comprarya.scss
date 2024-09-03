@@ -1,0 +1,44 @@
+.subtitulo {
+    margin-bottom: 20px;
+    font-family: $estiloletra;
+    color: $colorrojo;
+}
+
+.comprarya {
+    padding: 20px;
+    border: 2px solid $colorrojo;
+    background-color: $compraryacolor;
+    .contenidocomprar {
+        padding-top: 20px;
+        .subtitulohistoria2 {
+            font-family: $estiloletra !important;
+            background-color: $colorrojo;
+            color: $colorblanco;
+            font-size: 2.5rem;
+            line-height: 1.5;
+            padding: 20px;
+            text-align: center;
+        }
+        .parrafocomprar {
+            color: $colorrojo;
+            font-size: 1.8rem;
+            line-height: 1.5;
+            padding: 20px;
+            text-align: justify;
+            text-shadow: 1px 1px 1px $colorrojo;
+            font-family: $estiloletra !important;
+        }
+        .listacomprar {
+            color: $colorrojo;
+            font-size: 15px;
+            line-height: 1.5;
+            padding: 20px;
+            text-align: justify;
+            text-shadow: 1px 1px 1px rgb(224, 67, 67);
+            font-family: $estiloletra !important;
+        }
+        .btn-danger {
+            margin-top: 5px;
+        }
+    }    
+}

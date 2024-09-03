@@ -1,0 +1,74 @@
+.fondohistoria {
+    min-height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    .imagendehistoria {
+        content: " ";
+        background-image: url(../img/imagenhistoria.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        bottom: 0%;
+        right: 0%;
+        opacity: 0.80;
+        
+    }
+    .subtitulohistoria {
+        font-size: 4rem;
+        font-family: $estiloletra;
+        text-align: center;
+        position: relative;
+        color: $colorrojo;
+        text-shadow: 1px 1px 15px $colornegro;
+        opacity: 1;
+    }    
+}
+
+.parrafohistoria {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    padding: 20px;
+    text-align: justify;
+    text-shadow: 2px 2px 15px $colornegro;
+}
+
+.subtitulohistoria2 {
+    font-family: $estiloletra;
+    background-color: $colorrojo;
+    color: $colorblanco;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: 20px;
+    text-align: center;
+}
+
+.contenedorcapitulos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    .capitulo {
+        background-color: $compraryacolor;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: justify;
+        .subtitulocapitulo {
+            padding: 10px;
+            text-align: center;
+            font-family: $estiloletra;
+            color: $colorrojo;
+        }
+    }
+    .capitulo p {
+        color: $colorrojo;
+    } 
+}

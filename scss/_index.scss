@@ -1,0 +1,43 @@
+.subtitulo{
+  padding: 20px;
+  text-align: center;
+  font-family: $estiloletra;
+  color: $colorrojo;
+  text-shadow: 1px 2px 20px $colornegro; 
+  font-size: 5rem;
+}
+
+.parrafointro{
+  font-family: sans-serif !important;
+  font-size: 1.8rem !important;
+  line-height: 1.5 !important;
+  padding: 20px !important;
+  text-align: justify !important;
+  text-shadow: 2px 2px 20px $colornegro !important;
+}
+
+.colorsub4 {
+  background-color: $colorrojo;
+  .subtitulo4 {
+      text-align: center !important;
+      font-family: $estiloletra !important;
+      color: $colorblanco !important;
+      text-shadow: 2px 2px 20px $colornegro !important;
+      font-size: 2rem !important;
+      padding: 20px;
+  }
+}
+
+.contenedorgeneral {
+  padding: 20px;
+  .subtitulocontenedor {
+      text-align: center !important;
+      font-family: $estiloletra !important;
+      float: center !important;
+      width: 100% !important;
+      margin: 20px 0 !important;
+      text-shadow: 1px 1px 1px $colornegro !important;
+      font-size: 2rem !important;
+      color: $colorrojo !important;
+  }
+}
